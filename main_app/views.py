@@ -27,13 +27,19 @@ def landing(request):
 
 @login_required
 def stands_index(request):
-    stands = Stand.objects.filter()
+    stands = Stand.objects.filter(user = request.user)
     return render(request, 'stands/index.html', {'stands': stands})
 
 
 class StandCreate(LoginRequiredMixin, CreateView):
     model = Stand
-    fields = '__all__'
+    fields = ['name','company', 'type', 'strings', 'make', 'cost']
+
+    def form_valid(self, form):
+        # Assign the logged in user
+        form.instance.user = self.request.user
+        # Let the CreateView do its job as usual
+        return super().form_valid(form)
 
 @login_required
 def stands_detail(request, stand_id):
@@ -44,7 +50,7 @@ def stands_detail(request, stand_id):
 
 class StandUpdate(LoginRequiredMixin, UpdateView):
     model = Stand
-    fields = '__all__'
+    fields = ['name','company', 'type', 'strings', 'make', 'cost']
 
 class StandDelete(LoginRequiredMixin, DeleteView):
     model = Stand
