@@ -21,3 +21,13 @@ body {
     text-align: right;
     background-color: cornflowerblue;
   }
+
+  header {
+    background-color: cornflowerblue;
+  }
+
+.landingPage {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
