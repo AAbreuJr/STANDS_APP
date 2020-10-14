@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import environ
+import django_heroku
+
+django_heroku.settings(locals())
+
 env = environ.Env(
     DEBUG=(bool, False)
 )
