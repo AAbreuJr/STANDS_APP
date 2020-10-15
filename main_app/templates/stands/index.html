@@ -4,12 +4,19 @@
 <h1>My Stands</h1>
 
 {% for stand in stands %}
-<div class="card">
+<div class="row">
+  <div class="col m4">
+  <div class="card" id="index-card">
   <a href="{% url 'detail' stand.id %}">
   <div class="card-content">
     <span class="card-title">{{ stand.company }} {{ stand.name }}</span>
+    <p>{{ stand.type }} Guitar</p>
+    <p>{{ stand.make }} Made</p>
+    <p>Cost: ${{ stand.cost }}</p>
   </div>
   </a>
+</div>
+</div>
 </div>
 {% endfor %}
 
