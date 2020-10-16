@@ -17,28 +17,33 @@
 ## [Go to Trello Board](https://trello.com/b/ghCRCjdc/stands)
 
 ## Trello Board: 
-![Trello]()
+![Trello](https://i.imgur.com/3KC1Ynx.png)
 
 ## Entity Relationship Diagrams (ERD):
-![ERD]()
+![ERD](https://i.imgur.com/1D2Bgfu.png)
 
 
 # Website View
 
 ## *_USER VIEW (NOT LOGGED IN):_*
 ### What the website looks like once you load onto the page:
+![Landing](https://i.imgur.com/Xrxn80T.png)
 
 ## *_USER VIEW (NOT LOGGED IN):_*
 ### What the website looks like once you Click Sign Up:
+![SignUp](https://i.imgur.com/eVEalvt.png)
 
 ## *_USER VIEW (LOGGED IN):_*
-### What the website looks like when loggin in:
+### What the website looks like when logged in:
+![SignUp](https://i.imgur.com/80xPKGy.png)
 
 
 ### What the website looks like when you are adding a stand:
+![Adding](https://i.imgur.com/DrNTa19.png)
 
 
 ### What the website looks like when you are looking at your stands:
+![Stands](https://i.imgur.com/XidclOo.png)
 
 ## Technology Implemented:
 - Python
