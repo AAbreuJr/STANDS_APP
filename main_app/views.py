@@ -15,7 +15,7 @@ def signup(request):
     if form.is_valid():
       user = form.save()
       login(request, user)
-      return redirect('/stands/')
+      return redirect('/about/')
     else:
       error_message = 'Invalid credentials - try again'
   form = UserCreationForm()

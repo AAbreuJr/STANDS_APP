@@ -3,13 +3,14 @@
 }
 
 nav {
-  background-color: cornflowerblue;
+  background-color: #4E8397;
 }
 
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: #D5E9F1;
 }
 
   main {
@@ -19,16 +20,16 @@ body {
   footer.page-footer {
     padding-top: 0;
     text-align: right;
-    background-color: cornflowerblue;
+    background-color: #4E8397;
   }
 
   header {
-    background-color: cornflowerblue;
+    background-color: #4E8397;
   }
 
 .delete-button {
   font-family: Hack, monospace;
-  background: red;
+  background: #FF8066;
   color: #ffffff;
   cursor: pointer;
   font-size: 1em;
@@ -41,4 +42,36 @@ body {
 
 #index-card {
   width: 400px;
+}
+
+.submit-button {
+  background: #4E8397;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 1rem;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 10px;
+  width: auto;
+}
+
+a.edit-btn {
+  font-size: 20px;
+}
+
+a.delete-btn {
+  font-size: 20px;
+}
+
+.edit-text {
+  color: #4E8397;
+}
+
+.cancel-button {
+  font-size: 20px;
+}
+
+.instrument-text {
+  color: #FF8066;
 }

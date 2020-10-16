@@ -7,13 +7,13 @@
       <div class="card">
         <div class="card-content">
           <span class="card-title">{{ stand.company }} {{ stand.name }}</span>
-          <p>Type (Electric/Acoustic): {{ stand.type }}</p>
+          <p>Type: {{ stand.type }}</p>
           <p>Cost: {{ stand.cost }}</p>
         </div>
         <div class="card-action">
             <div class="card-action">
-                <a href="{% url 'stands_update' stand.id %}">Edit</a>
-                <a href="{% url 'stands_delete' stand.id %}">Delete</a>
+                <a href="{% url 'stands_update' stand.id %}" class="edit-btn">Edit</a>
+                <a href="{% url 'stands_delete' stand.id %}" class="delete-btn">Delete</a>
             </div>
         </div>
       </div>

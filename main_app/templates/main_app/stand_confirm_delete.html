@@ -3,11 +3,11 @@
 {% block content %}
   <h1>Remove Instrument on Stand</h1>
 
-  <h4>Are you sure you want to remove your <span class="red-text">{{ object.company }} {{ object.name }}</span>?</h4>
+  <h4>Are you sure you want to remove your <span class="instrument-text">{{ object.company }} {{ object.name }}</span>?</h4>
 
   <form action="" method="POST">
     {% csrf_token %}
     <input type="submit" value="Delete" class="delete-button">
-    <a href="{% url 'detail' stand.id %}">Cancel</a>
+    <a href="{% url 'detail' stand.id %}" class="cancel-button">Cancel</a>
   </form>
 {% endblock %}
